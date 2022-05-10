@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <style>
+
+li {<!--from  w w  w. java2  s  . c o m-->
+   border: 0px;
+   display: inline-block;
+   position: relative;
+   z-index: 1;
+   border: 0px solid #000000;
+   background-color: transparent;
+   font-family: Futura, Tahoma, sans-serif;
+   color: #ffffff;
+   padding: 40px;
+   margin-left: 20px;
+}
+li::after {
+   content: "'";
+   color: transparent;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   left: 0px;
+   top: 0px;
+   z-index: -1;
+   border-radius: 3px;
+   background-color: #038adc;
+   transform: skew(-30deg);
+   -webkit-transform: skew(-30deg);
+   -o-transform: skew(-30deg);
+   -moz-transform: skew(-30deg);
+   -ms-transform: skew(-30deg);
+}
+.img22 {
+  border-radius: 750%;
+ 
+}
+nav{
+    background-color: #1289dd;
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+nav ul li2{
+    display: inline-block;
+    background-color: #1289dd;
+}
+nav a{
+    display: block;
+    padding: 0 10px;
+    color: #fff;
+    line-height: 60px;
+    font-size: 20px;
+    text-decoration: none;
+}
+/* Hide Dropdown by Default*/
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+}
+/* hover */
+nav a:hover{
+    background-color: #000000;
+}
+/* Display Dropdown on Hover */
+nav ul li2:hover > ul {
+    display: inherit;
+}
+/* Fisrt Tier Dropdown */
+nav ul ul li2{
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+
+}
+
+/* ============ Second, Third and More Tiers ===========*/
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 170px;
+}
+
+/* Change this in order to change the Dropdown symbol */
+li2 > a::after { content: ' +';}
+li2 > a:only-child::after {
+    content: '';
+}
+      </style> 
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<title>
+Home
+</title>
+<div id="Title">
+<h2>
+<table    style="relative:right;top;width:500px;height:210px;" cellspacing="40" cellpadding="0" border="0" bordercolor="#FFFFFF">
+ 	
+ <td align="left"> <img src="Logo.png" width="150" height="150" id="im1"  ></td>
+  <td align="right" > <input type="Submit" value="Home" onclick="location.href='http://localhost:8080/Home Page'" style="background-color:#f8f9fa;font-size:18px; color:#000 " onmouseover="this.style.backgroundColor='#038adc'" onmouseout="this.style.backgroundColor='#f8f9fa'" class="btn"></td>
+<td align="right"> <input type="Submit" value="about"  onclick="location.href='http://localhost:8080/about page'" style="background-color:#f8f9fa;font-size:18px; color:#000 " onmouseover="this.style.backgroundColor='#038adc'" onmouseout="this.style.backgroundColor='#f8f9fa'" class="btn"></td>
+    
+
+   
+   <td align="right"> <input type="Submit" value="services" onclick="location.href='http://localhost:8080/Services page'" style="background-color:#f8f9fa;font-size:18px; color:#000 " onmouseover="this.style.backgroundColor='#038adc'" onmouseout="this.style.backgroundColor='#f8f9fa'" class="btn"></td>
+    
+   <td align="right"> <input type="Submit" value="contacts" onclick="location.href='http://localhost:8080/contact page'" style="background-color:#f8f9fa;font-size:18px; color:#000 " onmouseover="this.style.backgroundColor='#038adc'" onmouseout="this.style.backgroundColor='#f8f9fa'"   class="btn"></td>
+   
+<td align="right"> <input type="Submit" value="Get Started" onclick="location.href='http://localhost:8080/Get started page'" style="background-color:#0e51a7;font-size:18px; color:#000 " onmouseover="this.style.backgroundColor='#038adc'" onmouseout="this.style.backgroundColor='#f8f9fa'"   class="btn"></td>
+  	
+  	 <td align="right"> <li><img src="ministry.png"  id="im2"  width="80"  height="73" class="img22"  > </li></td> 
+</table>
+
+</h2>
+</div>
+
+<body style="background-color:#ffffff;">
+   
+   <div  align="center"> <!-- Block parent element -->
+      <img src="image.png" width="1600" height="920"   >
+	 
+	 </div>
+	  <div >
+	 <footer>
+  <p>Welcome to Online Vaccinations System</p>
+  <p>Contact information: <a href="mailto:Ministryofhealth@gmail.com">
+  MinistryofHealth@hotmail.com</a>.</p>
+</footer>
+ </div>
+    </body>
+
+</html>
